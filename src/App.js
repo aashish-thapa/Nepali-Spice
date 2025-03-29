@@ -1,10 +1,13 @@
 import './App.css';
+import { useState } from 'react';
 import { Link, Routes, Route } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUtensils } from '@fortawesome/free-solid-svg-icons';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import Modal from 'react-bootstrap/Modal';
+import Button from 'react-bootstrap/Button';
 import Home from './pages/Home/Home';
 import Menu from './pages/Menu/Menu';
 import About from './pages/About/About';
@@ -12,8 +15,29 @@ import Contact from './pages/Contact/Contact';
 import Footer from './components/Footer/Footer';
 
 function App() {
+  // State to control the popup
+  const [showPopup, setShowPopup] = useState(true);
+
+  const handleClosePopup = () => setShowPopup(false);
+
   return (
     <div id='app'>
+      {/* Announcement Modal */}
+      <Modal show={showPopup} onHide={handleClosePopup} centered>
+        <Modal.Header closeButton>
+          <Modal.Title>📢 Announcement</Modal.Title>
+        </Modal.Header>
+        <Modal.Body className="text-center fw-bold">
+          🍽️ Online Ordering System Coming Soon! 🚀
+        </Modal.Body>
+        <Modal.Footer>
+          <Button variant="success" onClick={handleClosePopup}>
+            Okay
+          </Button>
+        </Modal.Footer>
+      </Modal>
+
+      {/* Navbar */}
       <Navbar expand='lg' className='fixed-top bg-body-tertiary shadow'>
         <Container>
           <Navbar.Brand>
@@ -27,7 +51,7 @@ function App() {
             </Link>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls='basic-navbar-nav' />
-          <Navbar.Collapse className='text-center' id='basiv-navbar-nav'>
+          <Navbar.Collapse className='text-center' id='basic-navbar-nav'>
             <Nav className='me-auto justify-content-center w-100'>
               <Link to='/' className='nav-link text-uppercase text-success text-center fw-semibold'>Home</Link>
               <Link to='/menu' className='nav-link text-uppercase text-success text-center fw-semibold'>Menu</Link>
@@ -41,6 +65,7 @@ function App() {
         </Container>
       </Navbar>
 
+      {/* Routes */}
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/menu' element={<Menu />} />
