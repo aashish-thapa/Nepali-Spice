@@ -1,0 +1,38 @@
+.carousel-item1,
+.carousel-item2,
+.carousel-item3 {
+    background-size: cover;
+    background-position: center;
+}
+
+.carousel-item1 {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../../utils/images/gallery10.jpg);
+}
+
+.carousel-item2 {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7)), url(../../utils/images/gallery12.jpg);
+}
+
+.carousel-item3 {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7)), url(../../utils/images/gallery13.jpg);
+}
+
+.carousel .carousel-control-prev,
+.carousel .carousel-control-next,
+.carousel .carousel-indicators {
+    display: none;
+}
+
+@media only screen and (max-width: 768px) {
+    .carousel-item1 {
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(../../utils/images/gallery10.jpg);
+    }
+    
+    .carousel-item2 {
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(../../utils/images/gallery12.jpg);
+    }
+    
+    .carousel-item3 {
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(../../utils/images/gallery13.jpg);
+    }
+}
