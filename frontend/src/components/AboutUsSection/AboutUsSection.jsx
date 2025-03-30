@@ -23,8 +23,8 @@ function AboutUsSection() {
                 transition={{ duration: 1 }}
             >
                 <h2 className='text-uppercase fw-bold fs-1 mb-4 mb-lg-5'>Welcome to Nepali Spice</h2>
-                <p>Welcome to <strong>Nepali Spice</strong>, a homemade restaurant nestled in the heart of Riverside, Ontario, California. We bring you a taste of authentic Nepali cuisine, crafted with love and the freshest ingredients.</p>
-                <p className='mb-4 mb-lg-5'>Our cozy eatery offers a warm and inviting atmosphere where you can enjoy traditional Nepali dishes, all made with care in-house. Whether it's a casual lunch or a special dinner, we promise an unforgettable culinary experience. Visit us and savor the true flavors of Nepal, right here in Riverside!</p>
+                <p>Welcome to <strong>Nepali Spice</strong>, a homemade restaurant nestled in the heart of Hattiesburg, Mississippi. We bring you a taste of authentic Nepali cuisine, crafted with love and the freshest ingredients.</p>
+                <p className='mb-4 mb-lg-5'>Our cozy eatery offers a warm and inviting atmosphere where you can enjoy traditional Nepali dishes, all made with care in-house. Whether it's a casual lunch or a special dinner, we promise an unforgettable culinary experience. Visit us and savor the true flavors of Nepal, right here in Hattiesburg!</p>
                 <Link to='/about'>
                     <button type='button' className='btn btn-dark btn-lg rounded-0 text-capitalize shadow'>Learn More About Us</button>
                 </Link>

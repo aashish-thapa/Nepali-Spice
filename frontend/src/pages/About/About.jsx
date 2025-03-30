@@ -28,7 +28,7 @@ function About() {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 1 }}
           >
-            <p>Welcome to <strong>Nepali Spice</strong>, located in Riverside, Ontario, California. We're dedicated to bringing the authentic flavors of Nepal to your table. From rich spices to flavorful dishes, each meal is carefully prepared with the finest ingredients.</p>
+            <p>Welcome to <strong>Nepali Spice</strong>, located in 3418 Hardy St, Hattiesburg, Mississipi. We're dedicated to bringing the authentic flavors of Nepal to your table. From rich spices to flavorful dishes, each meal is carefully prepared with the finest ingredients.</p>
             <p>Our restaurant offers a warm and inviting atmosphere, perfect for enjoying lunch, dinner, or even a quick bite with your loved ones. Whether you're here for a traditional Nepali feast or something a bit different, we promise you an unforgettable experience.</p>
             <Link to='/contact'>
               <button type='button' className='btn btn-success btn-lg rounded-0 text-capitalize mt-3 shadow'>Contact us</button>

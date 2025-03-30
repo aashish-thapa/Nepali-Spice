@@ -10,7 +10,7 @@ function ContactInfo() {
       transition={{ duration: 1 }}
     >
         <h2 className='fs-1 mb-3 text-uppercase fw-bold'>Where to find us</h2>
-        <p className='mb-5'>Riverside, Ontario, California - 92501</p>
+        <p className='mb-5'>3418 Hardy St, Hattiesburg, MS</p>
         <h3 className='text-capitalize'>Opening hours</h3>
         <p className="m-0">Mon - Fri: 11:00 AM - 10:00 PM</p>
         <p>Sat - Sun: 12:00 PM - 11:00 PM</p>
