@@ -10,14 +10,17 @@ import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button';
 import Home from './pages/Home/Home';
 import Menu from './pages/Menu/Menu';
+import MenuPage from './components/MenuPage/Menu'
 import About from './pages/About/About';
 import Contact from './pages/Contact/Contact';
 import Footer from './components/Footer/Footer';
-
+import Cart from './components/Cart';
+import Checkout from './components/Checkout';
+import Success from './components/Success';
 function App() {
   // State to control the popup
   const [showPopup, setShowPopup] = useState(true);
-
+  const [cart, setCart] = useState([]);
   const handleClosePopup = () => setShowPopup(false);
 
   return (
@@ -61,6 +64,9 @@ function App() {
             <Link to='/contact'>
               <button type='button' className='btn btn-success rounded-0 text-capitalize my-3 my-lg-0 ms-lg-4 text-nowrap'>Book a table</button>
             </Link>
+            <Link to='/menupage'>
+              <button type='button' className='btn btn-warning rounded-0 text-capitalize my-3 my-lg-0 ms-lg-4 text-nowrap'>Order Now</button>
+            </Link>
           </Navbar.Collapse>
         </Container>
       </Navbar>
@@ -69,6 +75,12 @@ function App() {
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/menu' element={<Menu />} />
+        <Route path='/menupage' element={<MenuPage cart={cart} setCart={setCart} />} />
+        <Route path='/cart' element={<Cart cart={cart} setCart={setCart} />} />
+        <Route path='/checkout' element={<Checkout cart={cart} setCart={setCart} />} />
+        <Route path="/success" element={<Success />} />
+
+        
         <Route path='/about' element={<About />} />
         <Route path='/contact' element={<Contact />} />
       </Routes>
