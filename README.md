@@ -1,6 +1,4 @@
-Here’s a **detailed `README.md`** for your **Nepali Spice Restaurant Website**:
 
----
 
 # 🍽️ Nepali Spice - Restaurant Website  
 
