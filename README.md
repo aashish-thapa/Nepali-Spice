@@ -42,7 +42,11 @@
 - ⚛️ **React.js** - UI Framework  
 - 🎨 **Bootstrap 5** - Styling & Layout  
 - 🛣 **React Router** - Page Navigation  
-- 🎭 **FontAwesome Icons** - Icons & Graphics  
+- 🎭 **FontAwesome Icons** - Icons & Graphics
+
+  ### **Backend:**  
+- Node.js with Express
+- MongoDB
 
 ### **Deployment:**  
 - ▲ **Vercel** - Hosting  
@@ -55,6 +59,7 @@
 ```sh
 git clone https://github.com/yourusername/Nepali-Spice.git
 cd Nepali-Spice
+cd frontend
 ```
 
 ### 🔹 **2. Install Dependencies**  
@@ -65,6 +70,13 @@ npm install
 ### 🔹 **3. Start the Development Server**  
 ```sh
 npm start
+```
+
+### Backend
+```sh
+cd backend
+npm install
+npm run start
 ```
 🚀 The website will now be running at **`http://localhost:3000/`**  
 
