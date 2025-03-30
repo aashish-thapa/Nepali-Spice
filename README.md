@@ -5,8 +5,10 @@ Here’s a **detailed `README.md`** for your **Nepali Spice Restaurant Website**
 # 🍽️ Nepali Spice - Restaurant Website  
 
 ### **An elegant restaurant website with an upcoming online ordering system!**  
+![image](https://github.com/user-attachments/assets/7a2e376a-a8ac-4666-8d2b-8af9697aa3cd) 
+![image](https://github.com/user-attachments/assets/e70cbd79-5c25-4174-9b5c-fa3325fdcbc2)
 
-!link(nepali-spice.vercel.app)  
+
 
 ## 📌 **Table of Contents**  
 - [🚀 Live Demo](#-live-demo)  
