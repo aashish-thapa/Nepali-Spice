@@ -6,7 +6,7 @@ Here’s a **detailed `README.md`** for your **Nepali Spice Restaurant Website**
 
 ### **An elegant restaurant website with an upcoming online ordering system!**  
 
-![Nepali Spice Banner](nepali-spice.vercel.app)  
+!link(nepali-spice.vercel.app)  
 
 ## 📌 **Table of Contents**  
 - [🚀 Live Demo](#-live-demo)  
